@@ -1,0 +1,129 @@
+/* Shared Component Styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 40px;
+}
+
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+
+.intro {
+  text-align: center;
+  padding: 1rem;
+}
+.domain-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  max-width: 320px;
+  margin: 0 auto 1rem;
+}
+
+.domain {
+  background-color: #f0f0f0;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.close-icon {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+.description {
+  color: #333;
+  font-size: 14px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.app-links {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.card {
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.install-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: #28a745;
+  color: white;
+}
+
+.secondary {
+  background-color: #007bff;
+  color: white;
+}
+
+.footer {
+  background-color: #002f5f;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin: 0.3rem 0;
+}
