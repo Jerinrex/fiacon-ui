@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 
 const AppIntro = () => {
+  const [email, setEmail] = useState('');
+  
   return (
     <section className="intro">
       <div className="domain-bar">
-        <p className="domain">fiaconcleaningservices.com.au</p>
-        <span className="close-icon">×</span>
+        <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="seamless-input"
+        />
+        <span className="close-icon" onClick={() => setEmail('')}>×</span>
       </div>
 
       <h2>Our App</h2>
