@@ -23,6 +23,7 @@ function App() {
         } />
         <Route path="/register" element={
           <>
+          <Header />
             <TopNav />
             <HeaderInfo />
             <RegistrationInfo />

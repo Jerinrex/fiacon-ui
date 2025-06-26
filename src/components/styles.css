@@ -1,4 +1,14 @@
 /* Responsive Header Fix */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -349,32 +359,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* Change this from 1rem to 0.5rem */
+  gap: 0.2rem;
   flex-wrap: nowrap;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
+
 .step-section.reverse {
   flex-direction: row-reverse;
 }
 
 .step-img {
-  width: 120px;
+  width: 95px; /* Shrink image more */
   height: auto;
   flex-shrink: 0;
 }
+
 .step-text {
   background: white;
-  padding: 0.6rem; /* Change this from 0.8rem to 0.6rem */
+  padding: 0.2rem;
   border-radius: 10px;
   flex: 1;
-  max-width: 260px; /* Optional: Reduce max width if still too wide */
-  font-size:13.5px;
+  max-width: 200px; /* tighter than before */
+  font-size: 10.5px;
   line-height: 1.4;
+  word-break: break-word;
 }
 
-@media (max-width: 420px) {
+/* Trigger vertical stack only at very small screen */
+@media (max-width: 360px) {
   .step-section {
-    flex-wrap: wrap; /* allow vertical stack only on smallest screens */
+    flex-wrap: wrap;
     flex-direction: column;
   }
 
