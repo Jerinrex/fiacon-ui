@@ -18,13 +18,13 @@ const ActionButtons = () => {
       title: 'Sign In',
       subtitle: 'Lorem Ipsum is simply dummy text',
       icon: inIcon,
-      route: '/signin',
+      route: '/signout',
     },
     {
       title: 'Sign Out',
       subtitle: 'Lorem Ipsum is simply dummy text',
       icon: outIcon,
-      route: '/signout',
+      route: '/signin',
     },
   ];
 

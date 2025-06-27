@@ -1,6 +1,5 @@
 import React from 'react';
-import './styles.css';
-
+import './styles.css';import prImage from '../assets/pr.png';
 
 const HeaderInfo = () => {
   return (
@@ -12,7 +11,10 @@ const HeaderInfo = () => {
           https://fiacon.com/registration
         </a>
       </div>
-      <div className="icon-circle">👤</div>
+      <div className="icon-circle">
+  <img src={prImage} alt="Profile" className="profile-img" />
+</div>
+
     </div>
   );
 };

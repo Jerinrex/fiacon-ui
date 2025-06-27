@@ -343,25 +343,44 @@ body {
 
 .top-nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.top-nav button {
-  padding: 0.6rem 1.2rem;
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: 600;
-  background: #eee;
+  background-color: #b9b8b8;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  color: #333;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.3s ease;
+  flex: 1 1 140px; /* ensures flexible width */
+  max-width: 200px;
+  justify-content: center;
+  text-align: center;
 }
 
-.top-nav .active {
-  background-color: #2c64c6;
+.nav-btn:hover {
+  background-color: #cac5c5;
+}
+
+.nav-btn.active {
+  background-color: #1e3a8a;
   color: white;
+  box-shadow: none;
+}
+
+.nav-icon {
+  width:100px;
+  height: 30px;
+  object-fit: fill;
 }
 
 .header-info {
@@ -382,28 +401,26 @@ body {
   font-size: 14px;
 }
 
-.icon-circle {
-  background-color: #e9efff;
-  padding: 12px;
-  font-size: 24px;
-  border-radius: 50%;
-  min-width: 48px;
-  text-align: center;
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  object-fit: cover;
 }
-
 .registration-info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 2rem 1rem;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
 }
+
 .step-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-direction: row;
   flex-wrap: nowrap;
-  margin-bottom: 0.8rem;
 }
 
 .step-section.reverse {
@@ -411,39 +428,40 @@ body {
 }
 
 .step-img {
-  width: 95px; /* Shrink image more */
+  width: 80px;
   height: auto;
   flex-shrink: 0;
 }
 
 .step-text {
   background: white;
-  padding: 0.2rem;
+  padding: 0.8rem;
   border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  width: 100%;
   flex: 1;
-  max-width: 200px; /* tighter than before */
-  font-size: 10.5px;
-  line-height: 1.4;
-  word-break: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Trigger vertical stack only at very small screen */
-@media (max-width: 360px) {
+/* Responsive adjustment without stacking */
+@media (max-width: 600px) {
   .step-section {
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .step-section.reverse {
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
 
   .step-text {
-    max-width: 100%;
-    text-align: center;
+    font-size: 12px;
+    padding: 0.6rem;
   }
 
   .step-img {
-    margin-bottom: 0.5rem;
+    width: 90px;
+    height: fit-content;
   }
 }
