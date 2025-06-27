@@ -8,6 +8,7 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
+  
 }
 .header {
   display: flex;
@@ -108,27 +109,68 @@ html, body {
 }
 
 .install-btn {
-  background-color: #007bff;
-  color: white;
+  background-color: rgb(213, 210, 210);
+  color: rgb(23, 23, 120);
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  font-weight: bold;
+  border-radius: 15px;
 }
 
 .actions {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 1rem 0;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem;
 }
 
-.btn {
-  padding: 0.7rem 1.2rem;
-  border-radius: 10px;
-  border: none;
-  font-weight: bold;
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-card {
+    width: 90%; /* keep size consistent instead of shrinking */
+    max-width: 400px;
+  }
 }
+.action-card {
+  display: flex;
+  align-items:start;
+  gap: 1.2rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-4px);
+}
+
+.action-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+.action-text h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.action-text p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
 
 .primary {
   background-color: #28a745;
@@ -261,7 +303,7 @@ html, body {
 .reactive-logo {
   color: #00b2ff;
   font-weight: 600;
-  font-family: 'Orbitron', sans-serif; /* optional: match logo style */
+  font-family: 'Poppins', sans-serif; /* optional: match logo style */
 }
 
 
@@ -287,7 +329,7 @@ html, body {
 /* ========================= */
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f7fa;

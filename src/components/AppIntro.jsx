@@ -6,15 +6,6 @@ const AppIntro = () => {
   
   return (
     <section className="intro">
-      <div className="domain-bar">
-        <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="seamless-input"
-        />
-        <span className="close-icon" onClick={() => setEmail('')}>×</span>
-      </div>
 
       <h2>Our App</h2>
       <p className="description">
